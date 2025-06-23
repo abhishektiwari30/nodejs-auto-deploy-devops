@@ -24,10 +24,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run tests
-        run: npm test
-
-      - name: bash
+      - name: Run tests with Jest
         run: npx jest --forceExit --detectOpenHandles --verbose
 
       - name: Deploy to Render
